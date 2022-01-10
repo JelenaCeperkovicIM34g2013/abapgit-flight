@@ -1,0 +1,16 @@
+@Metadata.layer: #INDUSTRY
+annotate view ZAPF_C_FLIGHT_SHED
+    with 
+{
+    @UI.lineItem: [{ position: 10, label: 'Airport' }]
+    Airpfrom;
+    @UI.lineItem: [{ position: 20, label: 'From' }]
+    Cityfrom;
+    @UI.lineItem: [{ position: 30, label: 'To' }]
+    Cityto;
+    @UI.lineItem: [{ position: 40, label: 'Depart' }]
+    Deptime;
+    @UI.lineItem: [{ position: 50, label: 'Arrive' }]
+    Arrtime;
+    
+}

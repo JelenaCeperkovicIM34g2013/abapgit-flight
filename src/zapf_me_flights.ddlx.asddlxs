@@ -1,0 +1,14 @@
+@Metadata.layer: #INDUSTRY
+annotate view ZAPF_C_FLIGHTS
+    with 
+{
+    
+    @UI.lineItem: [{ position: 10, label: 'Airline ID' }]
+    Carrid;
+    @UI.lineItem: [{ position: 20, label: 'Connection ID' }]
+    Connid;
+    @UI.lineItem: [{ position: 30, label: 'Flight Date' }]
+    Fldate;
+    
+    
+}
