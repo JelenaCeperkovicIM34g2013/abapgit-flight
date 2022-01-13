@@ -19,25 +19,29 @@ association [1..*] to ZAPF_C_FLIGHTS as _Flight on $projection.Carrid = _Flight.
 association [1] to ZAPF_C_AIRLINE as _Airlines on $projection.Carrid = _Airlines.Carrid
 
 {   
-    key mandt, 
-    key Carrid,
-    key Connid,
-    Countryfr,
-    Cityfrom,
-    Airpfrom,
-    Countryto,
-    Cityto,
-    Airpto,
-    Fltime,
-    Deptime,
-    Arrtime,
-    Distance,
-    Distid,
-    Fltype,
-    Period,
+    key ZAPF_I_FLIGHT_SHED.Mandt,
+    key ZAPF_I_FLIGHT_SHED.Carrid,
+    key ZAPF_I_FLIGHT_SHED.Connid,
+    ZAPF_I_FLIGHT_SHED.Countryfr,
+    ZAPF_I_FLIGHT_SHED.Cityfrom,
+    ZAPF_I_FLIGHT_SHED.Airpfrom,
+    ZAPF_I_FLIGHT_SHED.Countryto,
+    ZAPF_I_FLIGHT_SHED.Cityto,
+    ZAPF_I_FLIGHT_SHED.Airpto,
+    ZAPF_I_FLIGHT_SHED.Fltime,
+    ZAPF_I_FLIGHT_SHED.Deptime,
+    ZAPF_I_FLIGHT_SHED.Arrtime,
+    ZAPF_I_FLIGHT_SHED.Distance,
+    ZAPF_I_FLIGHT_SHED.Distid,
+    ZAPF_I_FLIGHT_SHED.Fltype,
+    ZAPF_I_FLIGHT_SHED.Period,
     /* Associations */
-    _Airline,
-    _Flights,
+    ZAPF_I_FLIGHT_SHED._Air,
+    ZAPF_I_FLIGHT_SHED._Airline,
+    ZAPF_I_FLIGHT_SHED._Fli,
+    ZAPF_I_FLIGHT_SHED._Flights,
+
+    /* Associations */
     _Flight,
     _Airlines
 }

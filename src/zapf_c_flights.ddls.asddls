@@ -19,23 +19,27 @@ association [1] to ZAPF_C_FLIGHT_SHED as _Fshed on $projection.Carrid = _Fshed.C
 association [1] to ZAPF_C_AIRLINE as _Airlines on $projection.Carrid = _Airlines.Carrid
 
 {   
-    key mandt, 
-    key Carrid,
-    key Connid,
-    key Fldate,
-    Price,
-    Currency,
-    Planetype,
-    Seatsmax,
-    Seatsocc,
-    Paymentsum,
-    SeatsmaxB,
-    SeatsoccB,
-    SeatsmaxF,
-    SeatsoccF,
+    key ZAPF_I_FLIGHTS.Mandt,
+    key ZAPF_I_FLIGHTS.Carrid,
+    key ZAPF_I_FLIGHTS.Connid,
+    key ZAPF_I_FLIGHTS.Fldate,
+    ZAPF_I_FLIGHTS.Price,
+    ZAPF_I_FLIGHTS.Currency,
+    ZAPF_I_FLIGHTS.Planetype,
+    ZAPF_I_FLIGHTS.Seatsmax,
+    ZAPF_I_FLIGHTS.Seatsocc,
+    ZAPF_I_FLIGHTS.Paymentsum,
+    ZAPF_I_FLIGHTS.SeatsmaxB,
+    ZAPF_I_FLIGHTS.SeatsoccB,
+    ZAPF_I_FLIGHTS.SeatsmaxF,
+    ZAPF_I_FLIGHTS.SeatsoccF,
     /* Associations */
-    _Airline,
-    _Fli_shed,
+    ZAPF_I_FLIGHTS._Airl,
+    ZAPF_I_FLIGHTS._Airline,
+    ZAPF_I_FLIGHTS._Fli_s,
+    ZAPF_I_FLIGHTS._Fli_shed,
+    
+    /* Associations */
     _Fshed,
     _Airlines
 }
