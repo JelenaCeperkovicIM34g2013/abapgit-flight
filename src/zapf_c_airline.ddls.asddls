@@ -19,6 +19,7 @@ association [1..*] to ZAPF_C_FLIGHT_SHED as _Fshed on $projection.Carrid = _Fshe
 association [1..*] to ZAPF_C_FLIGHTS as _Flight on $projection.Carrid = _Flight.Carrid
 
 {  
+    key mandt,
     key Carrid,
     Carrname,
     Currcode,

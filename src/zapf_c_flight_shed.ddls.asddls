@@ -19,6 +19,7 @@ association [1..*] to ZAPF_C_FLIGHTS as _Flight on $projection.Carrid = _Flight.
 association [1] to ZAPF_C_AIRLINE as _Airlines on $projection.Carrid = _Airlines.Carrid
 
 {   
+    key mandt, 
     key Carrid,
     key Connid,
     Countryfr,

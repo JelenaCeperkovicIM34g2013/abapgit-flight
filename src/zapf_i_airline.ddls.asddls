@@ -20,11 +20,14 @@ association [1..*] to ZAPF_I_FLIGHT_SHED as _Fli_shed on $projection.Carrid = _F
 association [1..*] to ZAPF_I_FLIGHTS as _Flights on $projection.Carrid = _Flights.Carrid
 
 {   
-    
-    key Carrid,
-    Carrname,
-    Currcode,
-    Url,
+    key ZAPF_I_SCARR.mandt,
+    key ZAPF_I_SCARR.Carrid,
+    ZAPF_I_SCARR.Carrname,
+    ZAPF_I_SCARR.Currcode,
+    ZAPF_I_SCARR.Url,
+    /* Associations */
+    ZAPF_I_SCARR._Flig,
+    ZAPF_I_SCARR._Fli_s,
     @ObjectModel.association.type: #TO_COMPOSITION_CHILD
     _Fli_shed,
     @ObjectModel.association.type: #TO_COMPOSITION_CHILD
